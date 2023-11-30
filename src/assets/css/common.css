@@ -1,0 +1,8 @@
+body {
+    background-color: var(--mainBg-color);
+    color: var(--main-color);
+    font-family: var(--main-en);
+    text-transform: uppercase;
+
+    line-height: 0.9;
+}

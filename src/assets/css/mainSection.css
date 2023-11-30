@@ -1,0 +1,267 @@
+.cont_container {
+    padding: 2rem;
+}
+
+.main_text {
+    font-size: 20rem;
+    letter-spacing: -12px;
+    text-align: center;
+    line-height: 0.8;
+    margin-top: 2rem;
+}
+
+.main_text p {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 3rem;
+}
+
+.main_intro {
+    margin-top: 2.5rem;
+}
+
+.main_intro .draw_tall {
+    width: 20%;
+    margin-left: -9rem;
+    position: relative;
+    z-index: 99;
+}
+
+.main_intro .intro_word {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main_intro .intro_word ul {
+    text-align: center;
+    margin-top: -8rem;
+}
+
+.main_intro .intro_word ul span {
+    font-size: 18px;
+    margin-bottom: 1.7rem;
+    display: block;
+}
+
+.main_intro .intro_word ul li {
+    font-size: 4rem;
+    letter-spacing: -2px;
+}
+
+.main_intro .intro_text {
+    text-align: center;
+}
+
+.main_intro .intro_text h3 {
+    font-size: 18rem;
+    margin-top: -2.5rem;
+}
+
+.main_intro .intro_text p.en {
+    font-size: 15rem;
+    margin-top: -8rem;
+}
+
+.main_intro .intro_text p.ko {
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 3rem 0;
+    font-size: 15px;
+}
+
+.main_intro .intro_text .add_text {
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.main_intro .intro_text a {
+    display: block;
+}
+
+.main_work {
+    margin: 15rem 0;
+}
+
+.main_work h3 {
+    font-size: 44rem;
+    text-align: center;
+    letter-spacing: -20px;
+}
+
+
+.work_port .work {
+    border-radius: 20px;
+    color: #514F4E;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.work_port div.work:first-child {
+    background: #EFBEA9;
+}
+
+.work_port div.work:nth-child(2) {
+    background: #B2C8BE;
+}
+
+.work_port div.work:nth-child(3) {
+    background: #A3BCD1;
+}
+
+.work_port div.work:nth-child(4) {
+    background: #EED597;
+}
+
+.work_port .work img {
+    width: 40%;
+}
+
+.work_port .work h4 {
+    font-size: 5rem;
+    letter-spacing: -3px;
+    padding-top: 3rem;
+}
+
+.work_port .work p {
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+
+.work_port .work .work_btn {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 2rem;
+}
+
+.work_port .work .work_btn a {
+    text-transform: lowercase;
+    font-size: 1.2rem;
+    border: 1px solid;
+    padding: 0.8rem 2.2rem 0.7rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.main_bike {}
+
+.main_bike .bike_text {
+    width: 36%;
+    margin: 0 auto 10rem;
+}
+
+.main_bike .bike_text p {
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.main_bike .bike_text p em {
+    font-weight: 500;
+}
+
+.bike_cont {
+    text-align: center;
+}
+
+.bike_cont img {
+    width: 45%;
+    margin-bottom: -1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.bike_cont h3 {
+    font-size: 19rem;
+    letter-spacing: -13px;
+    line-height: 0.8;
+    text-align: center;
+}
+
+.bike_cont p {
+    font-size: 4rem;
+    letter-spacing: -1px;
+    margin-top: 1rem;
+}
+
+.main_mobile {
+    max-width: 60%;
+    display: flex;
+    margin: 15rem auto;
+}
+
+.main_mobile .mobile01 {
+    margin-right: -4rem;
+}
+
+.main_mobile .mobile01 img {
+    transform: translate3d(0px, 6em, 0px) scale3d(1, 1, 1) rotateZ(343deg);
+    margin-top: 2rem;
+}
+
+.main_mobile .macbook {
+    background-image: url(/assets/img/main_box.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding-bottom: 10rem;
+}
+
+.main_mobile .mobile02 {
+    margin-left: -12rem;
+    background-image: url(/assets/img/main_est.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position-y: 3.5vw;
+    padding: 0 5rem;
+}
+
+.main_mobile .mobile02 img {
+    transform: translate3d(0px, 6em, 0px) scale3d(1, 1, 1) rotateZ(11deg);
+}
+
+.main_mobile img {
+    border-radius: 10px;
+}
+
+.main_career {
+    position: relative;
+}
+
+.main_career .career_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.career_first {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #dbea885a;
+    max-width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.career_first h3 {
+    font-size: 6vw;
+    text-align: center;
+    max-width: 57%;
+    margin: 0 auto;
+    letter-spacing: -0.2vw;
+}
+
+.career_first p {
+    font-size: 13.5vw;
+    margin-top: -6vw;
+    letter-spacing: 0.15vw;
+}
