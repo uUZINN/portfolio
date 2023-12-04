@@ -2,7 +2,7 @@
 
 .main_container {
     background-image: url(../img/main-min.jpg);
-    background-size: 100%;
+    background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
     background-position: top;
@@ -186,7 +186,7 @@
     .main_bottom03_text p.ko {
         font-size: 1vw;
         white-space: inherit;
-        
+
     }
 
     .main_bottom01 img.w50 {
