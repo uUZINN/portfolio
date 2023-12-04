@@ -5,12 +5,12 @@ export function work() {
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.to(".parallax__item__bike", {
-        xPercent: 50,
+        xPercent: 130,
         ease: "none",
         duration: 0.1,
         scrollTrigger: {
             trigger: ".parallax__item__bike",
-            start: "top-=500",
+            start: "top-=700",
             end: "bottom",
             scrub: true
         }

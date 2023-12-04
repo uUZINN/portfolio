@@ -55,10 +55,62 @@
     font-size: 9rem;
 }
 
+
+
+.main_logo svg {
+    font-family: var(--main-logo);
+    font-size: 9rem;
+    letter-spacing: -0.5px;
+}
+
+.main_logo svg text {
+    text-transform: uppercase;
+    font-size: 9rem;
+    letter-spacing: -0.5px;
+    animation: stroke 5s infinite alternate;
+}
+
+@keyframes stroke {
+    0% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: var(--main-color);
+        stroke-width: 2;
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+    }
+
+    70% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: var(--main-color);
+        stroke-width: 2;
+
+    }
+
+    80% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: var(--main-color);
+        stroke-width: 3;
+
+    }
+
+    100% {
+        fill: var(--main-color);
+        stroke: rgba(54, 95, 160, 0);
+        stroke-width: 0;
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+    }
+}
+
+
+
+
+
+
 .main_content p {
     letter-spacing: 0;
     font-size: 8.8rem;
-    margin-top: -4rem;
+    margin-top: -5.5rem;
 }
 
 .main_bottom {
