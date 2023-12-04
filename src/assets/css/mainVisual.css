@@ -185,6 +185,8 @@
     .main_bottom02 p.ko,
     .main_bottom03_text p.ko {
         font-size: 1vw;
+        white-space: inherit;
+        
     }
 
     .main_bottom01 img.w50 {
