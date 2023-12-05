@@ -396,57 +396,71 @@
 .main_record {
     display: flex;
     margin: 15vw 0;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-start;
+    height: 200vw;
     position: relative;
+    width: 100%;
 }
 
-.main_record .circle {
+.circle_wrap {
     width: 50%;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+@supports (position: sticky) or (position: -webkit-sticky) {
+    .circle_wrap {
+        position: sticky;
+    }
+}
+
+.circle {
+    width: 100% !important;
     text-align: center;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh !important;
+    position: static !important;
 }
 
-.main_record .circle .end-style {
-    position: sticky !important;
-}
 
-.main_record .circle div {
+
+.circle div {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-.main_record .circle div.c1 {
+.circle div.c1 {
     width: 100%;
     transform: translate(-50%, -50%);
 }
 
-.main_record .circle div.c2 {
+.circle div.c2 {
     width: 86%;
 }
 
-.main_record .circle div.c3 {
+.circle div.c3 {
     width: 72%;
 }
 
-.main_record .circle div.c4 {
+.circle div.c4 {
     width: 58.5%;
 }
 
-.main_record .circle div.c5 {
+.circle div.c5 {
     width: 45%;
 }
 
-.main_record .circle div.c6 {
+.circle div.c6 {
     width: 32%;
 }
 
-.main_record .circle img {
+.circle img {
     width: 85%;
 }
 
@@ -461,8 +475,9 @@
     width: 40%;
     display: flex;
     justify-content: flex-end;
-    margin-right: 2.5vw;
+    margin-right: 5vw;
     flex-direction: column;
+    align-items: flex-end;
 }
 
 .main_record .work .work_title {
