@@ -362,6 +362,10 @@
     width: 45%;
 }
 
+.cont_container.mainSection_03 {
+    /* margin-top: 10vw; */
+}
+
 .career_text {
     text-align: center;
     line-height: 1.5;
@@ -394,13 +398,20 @@
     margin: 15vw 0;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
 }
 
 .main_record .circle {
     width: 50%;
     text-align: center;
     position: relative;
-    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_record .circle .end-style {
+    position: sticky !important;
 }
 
 .main_record .circle div {
