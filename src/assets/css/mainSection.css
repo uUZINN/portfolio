@@ -397,20 +397,61 @@
 }
 
 .main_record .circle {
-    width: 55%;
-    text-align: right;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+}
 
+.main_record .circle div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main_record .circle div.c1 {
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.main_record .circle div.c2 {
+    width: 86%;
+}
+
+.main_record .circle div.c3 {
+    width: 72%;
+}
+
+.main_record .circle div.c4 {
+    width: 58.5%;
+}
+
+.main_record .circle div.c5 {
+    width: 45%;
+}
+
+.main_record .circle div.c6 {
+    width: 32%;
 }
 
 .main_record .circle img {
-    width: 80%;
+    width: 85%;
 }
+
+
+
+
+
+
+
 
 .main_record .work {
     width: 40%;
     display: flex;
     justify-content: flex-end;
     margin-right: 2.5vw;
+    flex-direction: column;
 }
 
 .main_record .work .work_title {
