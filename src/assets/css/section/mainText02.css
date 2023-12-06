@@ -1,0 +1,46 @@
+.main_text02 {
+    font-size: 12vw;
+    letter-spacing: -0.3vw;
+    text-align: center;
+    line-height: 0.8;
+}
+
+.main_text02 p.ko {
+    font-size: 0.8vw;
+    line-height: 1.4;
+    text-transform: none;
+    font-weight: 100;
+    margin-top: 2vw;
+}
+
+@media (max-width: 1650px) {}
+
+
+@media (max-width: 1495px) {
+    .main_text02 p.ko {
+        font-size: 1vw;
+    }
+}
+
+@media(max-width: 800px) {
+
+    .main_text02 {
+        font-size: 11.5vw;
+    }
+
+    .main_text02 p.ko {
+        font-size: 1.5vw;
+    }
+}
+
+@media(max-width: 650px) {
+
+    .main_text02 p.ko {
+        font-size: 2.5vw;
+        margin-top: 4vw;
+    }
+
+    .main_text02 {
+        margin-top: 10vw;
+    }
+}

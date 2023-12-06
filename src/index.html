@@ -41,7 +41,7 @@
 
             <div class="main_bottom">
                 <div class="main_bottom01">
-                    <img class="w50" src="assets/img/main_est.png" alt="">
+                    <img class="w50" src="assets/img/main_est.svg" alt="">
                     <!-- <img class="w50" src="assets/img/main_b.png" alt=""> -->
                     <div class="flow_banner w50">
                         <ul class="list">
@@ -52,7 +52,7 @@
                             <li>isastory:make</li>
                         </ul>
                     </div>
-                    <img src="assets/img/main_box.png" alt="">
+                    <img src="assets/img/main_box.svg" alt="">
                 </div>
                 <div class="main_bottom02">
                     <div class="main_bottom02_title">
@@ -267,7 +267,7 @@
         </section>
         <!-- // mainSection_02 -->
 
-        <section id="mainSection" class="cont_container mainSection_03">
+        <section id="mainSection" class="cont_container mainSection_03 parallax__item__desc">
             <div class="main_text02">
                 A front-end developer el-
                 evating user experiences
@@ -411,49 +411,6 @@
     <!-- // wrap -->
 
 
-    <script>
-        $(window).on('load', function () {
-            setFlowBanner();
-        })
-
-        function setFlowBanner() {
-            const $wrap = $('.flow_banner');
-            const $list = $('.flow_banner .list');
-            let wrapWidth = $wrap.width();
-            let listWidth = $list.width();
-            const speed = 30; //1초에 몇픽셀 이동하는지 설정
-
-            //리스트 복제
-            let $clone = $list.clone();
-            $wrap.append($clone);
-            flowBannerAct()
-
-            //배너 실행 함수
-            function flowBannerAct() {
-                //무한 반복을 위해 리스트를 복제 후 배너에 추가
-                if (listWidth < wrapWidth) {
-                    const listCount = Math.ceil(wrapWidth * 2 / listWidth);
-                    for (let i = 2; i < listCount; i++) {
-                        $clone = $clone.clone();
-                        $wrap.append($clone);
-                    }
-                }
-                $wrap.find('.list').css({
-                    'animation': `${listWidth / speed}s linear infinite flowRolling`
-                });
-            }
-
-            // 마우스가 요소 위로 진입했을 때 일시정지
-            $wrap.on('mouseenter', function () {
-                $wrap.find('.list').css('animation-play-state', 'paused');
-            });
-
-            // 마우스가 요소에서 빠져나갈 때 재생
-            $wrap.on('mouseleave', function () {
-                $wrap.find('.list').css('animation-play-state', 'running');
-            });
-        }
-    </script>
     <script type="module" src="assets/js/main.js"></script>
 </body>
 

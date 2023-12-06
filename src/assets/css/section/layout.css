@@ -1,3 +1,15 @@
+.cont_container {
+    padding: 2rem;
+}
+
+.parallax__item__desc {
+    margin-top: 0;
+}
+
+.cont_container.parallax__item__desc {
+    margin-top: 35vw !important;
+}
+
 /* mainVisual */
 
 .main_container {
@@ -149,6 +161,10 @@
     .main_container {
         background-size: cover;
     }
+
+    .cont_container {
+        padding: 2vw;
+    }
 }
 
 @media (max-width: 1495px) {
@@ -198,6 +214,12 @@
 }
 
 @media (max-width: 600px) {
+
+    body,
+    html {
+        overflow-x: hidden;
+    }
+
     .main_header a {
         font-size: 5rem;
         letter-spacing: -3px;

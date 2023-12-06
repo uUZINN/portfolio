@@ -1,0 +1,254 @@
+.main_career {
+    position: relative;
+}
+
+.main_career .career_bg {
+    position: absolute;
+    top: 10vw;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.career_first {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #dbea885a;
+    max-width: 85%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.career_first h3 {
+    font-size: 6vw;
+    text-align: center;
+    max-width: 58%;
+    margin: 0 auto;
+    letter-spacing: -0.2vw;
+}
+
+.career_first p {
+    font-size: 13.5vw;
+    margin-top: -6vw;
+    letter-spacing: 0.15vw;
+
+}
+
+.career_second {
+    height: 98vh;
+    max-width: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.career_second .career_cont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.career_second .career_icon img {
+    width: 10vw;
+}
+
+.career_second .career_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 65%;
+}
+
+.career_second .career_list>div h4 {
+    font-size: 3vw;
+    letter-spacing: -0.1vw;
+}
+
+.career_second .career_list>div ul {
+    margin-top: 0.5vw;
+}
+
+.career_second .career_list>div ul li {
+    font-weight: 300;
+    font-size: 0.7vw;
+    padding: 0.7vw 0;
+    border-bottom: 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.career_second .career_list>div ul li:last-child {
+    border: none;
+}
+
+.career_second .career_list>div {
+    width: 45%;
+}
+
+.cont_container.mainSection_03 {
+    /* margin-top: 10vw; */
+}
+
+.career_text {
+    text-align: center;
+    line-height: 1.5;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+
+@media (max-width: 1495px) {
+
+    .career_first {
+        height: 55vw;
+    }
+
+    .career_second {
+        height: 55vw;
+        max-width: 90%;
+    }
+
+    .career_second .career_list>div ul li {
+        font-weight: 300;
+        font-size: 0.9vw;
+        padding: 0.9vw 0;
+    }
+
+    .career_second .career_list>div {
+        width: 47%;
+    }
+
+    .career_second .career_list {
+        width: 75%;
+    }
+
+}
+
+@media(max-width: 800px) {
+
+    .career_first {
+        max-width: 100%;
+    }
+
+    .career_first h3 {
+        max-width: 60%;
+    }
+
+    .career_second {
+        height: 53vw;
+        max-width: 90%;
+    }
+
+    .career_second .career_list {
+        width: 100%;
+    }
+
+    .career_icon {
+        display: none;
+    }
+
+    .career_second .career_list>div h4 {
+        font-size: 4vw;
+    }
+
+    .career_second .career_list>div ul {
+        margin-top: 1.5vw;
+    }
+
+    .career_second .career_list>div ul li {
+        font-weight: 300;
+        font-size: 1.3vw;
+        padding: 1.3vw 0;
+    }
+
+    .career_text {
+        font-size: 1.5vw;
+    }
+
+}
+
+@media(max-width: 650px) {
+    .career_second .career_list>div ul li {
+        font-weight: 500;
+        font-size: 1.3vw;
+        padding: 1.3vw 0;
+    }
+
+    .main_career {
+        position: relative;
+    }
+
+    .main_career .career_bg {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 270%;
+        margin-top: 60%;
+        height: auto;
+        z-index: -1;
+        transform: translateX(-50%);
+    }
+
+    .career_first {
+        height: 120vw;
+    }
+
+    .career_first h3 {
+        max-width: 100%;
+        font-size: 12vw;
+    }
+
+    .career_first p {
+        font-size: 17.5vw;
+        margin-top: -7vw;
+    }
+
+    .career_second {
+        height: 200vw;
+        max-width: 90%;
+        margin-top: 30%;
+    }
+
+    .career_second .career_list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .career_second .career_list>div {
+        width: 100%;
+        margin-bottom: 13vw;
+    }
+
+    .career_second .career_list>div h4 {
+        font-size: 9vw;
+    }
+
+    .career_second .career_list>div ul li {
+        font-weight: 500;
+        font-size: 2.6vw;
+        padding: 2.7vw 0;
+    }
+
+    .career_text {
+        font-size: 3vw;
+        width: 90%;
+        transform: translateX(-50%);
+        left: 50%;
+        display: none;
+    }
+
+}
