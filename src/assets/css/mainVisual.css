@@ -52,20 +52,21 @@
     letter-spacing: -0.5;
     color: transparent;
     -webkit-text-stroke: 3px var(--main-color);
-    font-size: 9rem;
+    font-size: 7vw;
 }
 
 
 
 .main_logo svg {
     font-family: var(--main-logo);
-    font-size: 9rem;
+    font-size: 7vw;
     letter-spacing: -0.5px;
+    margin-bottom: -3rem;
 }
 
 .main_logo svg text {
     text-transform: uppercase;
-    font-size: 9rem;
+    font-size: 7vw;
     letter-spacing: -0.5px;
     animation: stroke 5s infinite alternate;
 }
@@ -95,7 +96,7 @@
 
     100% {
         fill: var(--main-color);
-        stroke: rgba(54, 95, 160, 0);
+        stroke: var(--main-color);
         stroke-width: 0;
         stroke-dashoffset: -25%;
         stroke-dasharray: 50% 0;
@@ -138,6 +139,48 @@
     margin-bottom: 1.5rem;
 }
 
+.flow_banner {
+    overflow: hidden;
+    display: flex;
+    width: 47%;
+}
+
+.flow_banner .list {
+    display: flex;
+}
+
+.flow_banner .list>li {
+    white-space: nowrap;
+    font-family: 'Libre Barcode 39 Extended';
+    font-size: 2.9vw;
+    letter-spacing: 0.1vw;
+}
+
+@keyframes flowRolling {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* 반응형 스타일 */
+@media (max-width: 1280px) {
+    .flow_banner .list>li {
+        /* font-size: 16px; */
+    }
+}
+
+@media (max-width: 767px) {
+    .flow_banner .list>li {
+        /* font-size: 14px; */
+    }
+}
+
+
+
 .main_bottom02 {
     width: 70%;
     text-align: center;
@@ -171,6 +214,19 @@
 .main_bottom03 {
     width: 15%;
     position: relative;
+    overflow: hidden;
+    max-height: 165px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.main_bottom03:hover img {
+    width: 150%;
+    filter: grayscale(1);
+    transition: all 1s;
 }
 
 .main_bottom03_text {
@@ -201,13 +257,17 @@
     .main_container {
         background-size: cover;
     }
+
+    .main_content h1.main_logo svg text {
+        font-size: 10vw;
+    }
+
+    .main_logo svg {
+        margin-bottom: 0rem;
+    }
 }
 
 @media (max-width: 1495px) {
-    .main_content h1.main_logo {
-        -webkit-text-stroke: 2px var(--main-color);
-        font-size: 10vw;
-    }
 
     .main_content p {
         font-size: 10vw;
@@ -251,6 +311,16 @@
     }
 }
 
+@media (max-width: 900px) {
+    .main_content h1.main_logo svg text {
+        font-size: 24vw;
+    }
+
+    .main_logo svg {
+        margin-bottom: -1.5rem;
+    }
+}
+
 @media (max-width: 600px) {
     .main_header a {
         font-size: 5rem;
@@ -263,14 +333,14 @@
         letter-spacing: -0.3px;
     }
 
-    .main_content h1.main_logo {
-        -webkit-text-stroke: 1px var(--main-color);
-        font-size: 11vw;
+
+
+    .main_content h1.main_logo svg text {
+        font-size: 42vw;
     }
 
-    .main_content h1.main_logo {
-        -webkit-text-stroke: 1px var(--main-color);
-        font-size: 11vw;
+    .main_logo svg {
+        margin-bottom: -1rem;
     }
 
     .main_bottom01,
@@ -296,6 +366,32 @@
     }
 }
 
+@media (max-width: 450px) {
+    .main_header {
+        padding: 1.5rem;
+    }
+
+    .main_content h1.main_logo svg text {
+        font-size: 51vw;
+    }
+
+    .main_header a {
+        font-size: 4rem;
+    }
+
+    .main_header a span {
+        font-size: 0.7rem;
+    }
+
+    .main_header p {
+        font-size: 14px;
+    }
+
+    .main_logo svg {
+        margin-bottom: -0.8rem;
+    }
+}
+
 @media (max-width: 400px) {
     .main_header {
         padding: 1rem;
@@ -317,8 +413,12 @@
         letter-spacing: -0.2px;
     }
 
-    .main_content h1.main_logo {
-        font-size: 11.5vw;
+    .main_content h1.main_logo svg text {
+        font-size: 58vw;
+    }
+
+    .main_logo svg {
+        margin-bottom: -0.8rem;
     }
 
     .main_content p {

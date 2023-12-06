@@ -95,6 +95,7 @@
 
 .main_work {
     margin: 5vw 0 15vw;
+    overflow: hidden;
 }
 
 .main_work h3 {
@@ -105,17 +106,23 @@
     top: 70px;
 }
 
+.work_port {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .work_port .work {
     border-radius: 20px;
     width: 95%;
-    height: 100vh;
+
     margin: 0 auto;
     color: #514F4E;
     text-align: center;
-    position: relative;
     margin-bottom: 20px;
     position: sticky;
+    position: -webkit-sticky;
     transition: all 0.3s ease-in;
 }
 
@@ -999,9 +1006,21 @@
         overflow-x: hidden;
     }
 
+    .main_work h3 {
+        top: 70px;
+    }
+
     .main_text p {
         font-size: 2.7vw;
         font-weight: 500;
+    }
+
+    .main_text {
+        margin-top: 15vw;
+    }
+
+    .main_intro {
+        margin-top: 14vw;
     }
 
     .main_intro .intro_word ul span {
@@ -1015,6 +1034,7 @@
 
     .main_intro .draw_tall {
         width: 34%;
+        margin-bottom: -15vw;
     }
 
     .main_intro .intro_text h3 {
@@ -1103,11 +1123,16 @@
         padding: 1.3vw 0;
     }
 
+    .main_career {
+        position: relative;
+    }
+
     .main_career .career_bg {
         position: absolute;
         top: 0;
         left: 50%;
         width: 270%;
+        margin-top: 60%;
         height: auto;
         z-index: -1;
         transform: translateX(-50%);
@@ -1130,6 +1155,7 @@
     .career_second {
         height: 200vw;
         max-width: 90%;
+        margin-top: 30%;
     }
 
     .career_second .career_list {
@@ -1162,6 +1188,10 @@
         display: none;
     }
 
+    .cont_container.mainSection_03 {
+        margin-top: -50vw;
+    }
+
     .main_text02 p.ko {
         font-size: 2.5vw;
         margin-top: 4vw;
@@ -1173,11 +1203,17 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
+        height: 58vw;
     }
 
     .main_record .circle {
         width: 90%;
         text-align: center;
+    }
+
+    .pin-spacer {
+        height: 100% !important;
+        padding: 0 !important;
     }
 
     .main_record .work {
