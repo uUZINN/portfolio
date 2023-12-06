@@ -194,11 +194,18 @@
         position: absolute;
         top: 0;
         left: 50%;
-        width: 270%;
+        width: 100%;
         margin-top: 60%;
         height: auto;
         z-index: -1;
         transform: translateX(-50%);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main_career .career_bg img {
+        width: 270%;
     }
 
     .career_first {
@@ -217,8 +224,11 @@
 
     .career_second {
         height: 200vw;
-        max-width: 90%;
-        margin-top: 30%;
+        max-width: 100%;
+        margin: 30% 0 0;
+        padding: 0 1rem;
+        width: 100%;
+        display: flex;
     }
 
     .career_second .career_list {

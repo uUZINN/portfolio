@@ -1,3 +1,7 @@
+.main_bike {
+    overflow: hidden;
+}
+
 .main_bike .bike_text {
     width: 36%;
     margin: 0 auto 10rem;
