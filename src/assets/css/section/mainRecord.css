@@ -1,3 +1,7 @@
+.cont_container.mainSection_03 {
+    margin-top: 6vw;
+}
+
 .main_record {
     display: flex;
     margin: 15vw 0;
@@ -122,6 +126,8 @@
 @media (max-width: 1495px) {}
 
 @media(max-width: 800px) {
+
+
     .main_record .circle img {
         width: 95%;
     }
@@ -177,6 +183,7 @@
     .circle_wrap {
         height: 30vh;
         width: 80%;
+        position: static;
     }
 
     .circle_wrap .pin-spacer {

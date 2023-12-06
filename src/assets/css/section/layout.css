@@ -215,10 +215,7 @@
 
 @media (max-width: 600px) {
 
-    body,
-    html {
-        overflow-x: hidden;
-    }
+
 
     .main_header a {
         font-size: 5rem;

@@ -1,7 +1,7 @@
 /* mainVisual */
 
 .main_container {
-    background-image: url(../img/main-min.jpg);
+    background-image: url(../../img/main-min.jpg);
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;

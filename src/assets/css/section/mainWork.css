@@ -137,7 +137,8 @@
     .work_port .work h4 {
         font-size: 10vw;
         letter-spacing: -0.5vw;
-        padding-top: 5.5vw;
+        padding-top: 10.5vw;
+        padding-bottom: 2vw;
     }
 
     .work_port .work p {
@@ -153,8 +154,8 @@
     }
 
     .work_port .work .work_btn {
-        bottom: 3vw;
-        right: 3vw;
+        margin-top: 6vw;
+        margin-bottom: 6vw;
     }
 
     .work_port .work .work_btn a {
