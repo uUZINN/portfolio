@@ -37,21 +37,26 @@
 }
 
 .work_port div.work.s1 {
-    background: #EFBEA9;
+    background: #B2C8BE;
     top: 60px;
 }
 
 .work_port div.work.s2 {
-    background: #B2C8BE;
+    background: #A3BCD1;
     top: 100px;
 }
 
 .work_port div.work.s3 {
     top: 140px;
-    background: #A3BCD1;
+    background: #ACA5CE;
 }
 
 .work_port div.work.s4 {
+    top: 180px;
+    background: #EFBEA9;
+}
+
+.work_port div.work.s5 {
     top: 290px;
     background: #EED597;
 }
