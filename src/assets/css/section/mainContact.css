@@ -1,3 +1,8 @@
+#mainSection.mainContact {
+    position: relative;
+    z-index: 9;
+}
+
 .main_contact {
     background-color: var(--main-color);
     display: flex;
