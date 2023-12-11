@@ -105,9 +105,35 @@
     margin: 2vw 0 4vw;
 }
 
-.main_record .work .work_title img {
+.main_record .work .work_title a {
+    display: inline-block;
     margin-bottom: 7vw;
+    transition: all 0.3s;
+    position: relative;
+    font-family: var(--sub-en);
+    text-transform: none;
 }
+
+.main_record .work .work_title a:before {
+    content: 'View Site';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000009d;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.work .work_title a:hover:before {
+    opacity: 1;
+}
+
 
 .main_record .work .work_title ul {
     margin-top: 1.6vw;
