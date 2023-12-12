@@ -11,4 +11,8 @@ window.addEventListener("load", function () {
     link();
     smooth();
     setFlowBanner();
+
 })
+window.addEventListener('load', adjustPosition);
+window.addEventListener('resize', adjustPosition);
+

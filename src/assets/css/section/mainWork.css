@@ -77,6 +77,16 @@
     font-size: 0.9vw;
 }
 
+.work_port .work p em {
+    display: block;
+    margin-top: 0.7vw;
+    text-transform: math-auto;
+    letter-spacing: -1px;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 0.8vw;
+}
+
 .work_port .work .work_btn {
     margin-top: 2vw;
 }

@@ -128,13 +128,13 @@ table {
     text-indent: -9999px;
 }
 
-body {
+/* body {
     -ms-overflow-style: none;
 }
 
 ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 
 /* 영문 필기체 */

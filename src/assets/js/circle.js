@@ -27,4 +27,5 @@ export function circle() {
             document.querySelector('.circle').style.position = 'sticky !important';
         }
     });
+
 }

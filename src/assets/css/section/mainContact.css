@@ -3,6 +3,11 @@
     z-index: 9;
 }
 
+#mainSection.cont_container {
+    position: relative;
+    z-index: 9999;
+}
+
 .main_contact {
     background-color: var(--main-color);
     display: flex;
@@ -171,7 +176,7 @@
     align-items: flex-end;
 }
 
-.infor_btn button {
+.infor_btn a {
     background: none;
     padding: 0;
     font-size: 1.7vw;
