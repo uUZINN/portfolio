@@ -1,5 +1,6 @@
 body {
-    background-color: var(--mainBg-color);
+    --bg-color: #192928;
+    background-color: var(--bg-color);
     color: var(--main-color);
     font-family: var(--main-en);
     text-transform: uppercase;

@@ -1,9 +1,16 @@
 .main_text {
+    text-align: center;
+}
+
+.main_text h3 {
     font-size: 16.5vw;
     letter-spacing: -0.6vw;
-    text-align: center;
     line-height: 0.8;
     margin-top: 7vw;
+}
+
+.main_text h3 span {
+    display: block;
 }
 
 .main_text p {
@@ -12,6 +19,7 @@
     line-height: 1.5;
     margin-top: 3vw;
 }
+
 
 @media (max-width: 1650px) {
 

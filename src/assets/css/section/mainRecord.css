@@ -19,13 +19,31 @@
     height: 100vh;
 }
 
+.circle_cont {
+    position: absolute;
+    width: 100%;
+}
+
+/* 
+.circle_cont:first-child {
+    z-index: 9;
+} */
+.circle_cont .circle {
+    opacity: 1;
+}
+
+.circle_cont .blue_circle {
+    opacity: 0;
+}
+
 @supports (position: sticky) or (position: -webkit-sticky) {
     .circle_wrap {
         position: sticky;
     }
 }
 
-.circle {
+.circle,
+.blue_circle {
     width: 100% !important;
     text-align: center;
     display: flex;
@@ -35,41 +53,51 @@
     position: static !important;
 }
 
+.blue_wrap {
+    display: none;
+}
 
-
-.circle div {
+.circle div,
+.blue_circle div {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-.circle div.c1 {
+.circle div.c1,
+.blue_circle div.c1 {
     width: 100%;
     transform: translate(-50%, -50%);
 }
 
-.circle div.c2 {
+.circle div.c2,
+.blue_circle div.c2 {
     width: 86%;
 }
 
-.circle div.c3 {
+.circle div.c3,
+.blue_circle div.c3 {
     width: 72%;
 }
 
-.circle div.c4 {
+.circle div.c4,
+.blue_circle div.c4 {
     width: 58.5%;
 }
 
-.circle div.c5 {
+.circle div.c5,
+.blue_circle div.c5 {
     width: 45%;
 }
 
-.circle div.c6 {
+.circle div.c6,
+.blue_circle div.c6 {
     width: 32%;
 }
 
-.circle img {
+.circle img,
+.blue_circle img {
     width: 85%;
 }
 
@@ -93,6 +121,27 @@
     width: 80%;
     margin-bottom: 14vw;
 }
+
+.main_record .work .work_title.w2 {
+    color: #C6EA9A;
+}
+
+.main_record .work .work_title.w3 {
+    color: #B8EAA7;
+}
+
+.main_record .work .work_title.w4 {
+    color: #AAEAB3;
+}
+
+.main_record .work .work_title.w5 {
+    color: #9CEAC0;
+}
+
+.main_record .work .work_title.w6 {
+    color: #89EAD1;
+}
+
 
 .main_record .work .work_title h5 {
     font-size: 3vw;
@@ -148,7 +197,93 @@
     border-bottom: 1px solid;
 }
 
-@media (max-width: 1650px) {}
+@keyframes rotateClockwise {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateCounterClockwise {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@media (max-width: 1800px) {
+    .main_record {
+        margin: 20vw 0;
+        height: 100%;
+    }
+
+    .main_record .circle,
+    .main_record .blue_circle {
+        width: 100% !important;
+        text-align: center;
+        height: auto !important;
+        transform: translate(0px, 0px) !important;
+        max-height: 100% !important;
+        max-width: 100% !important;
+
+    }
+
+    .main_record .circle .c1 img,
+    .main_record .circle .c3 img,
+    .main_record .circle .c5 img,
+    .main_record .blue_circle .c1 img,
+    .main_record .blue_circle .c3 img,
+    .main_record .blue_circle .c5 img {
+        animation-name: rotateClockwise;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .main_record .circle .c2 img,
+    .main_record .circle .c4 img,
+    .main_record .circle .c6 img,
+    .main_record .blue_circle .c2 img,
+    .main_record .blue_circle .c4 img,
+    .main_record .blue_circle .c6 img {
+        animation-name: rotateCounterClockwise;
+        animation-duration: 18s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+
+
+    .circle div,
+    .blue_circle div {
+        transform: translate(-50%, -50%) !important;
+    }
+
+    .circle_wrap {
+        width: 50%;
+        position: sticky;
+    }
+
+    .circle_wrap .pin-spacer {
+        height: 100% !important;
+        padding: 0 !important;
+        max-height: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .main_record .work {
+        width: 50%;
+    }
+
+
+
+}
 
 
 @media (max-width: 1495px) {}
@@ -156,11 +291,13 @@
 @media(max-width: 800px) {
 
 
-    .main_record .circle img {
+    .main_record .circle img,
+    .main_record .blue_circle img {
         width: 95%;
     }
 
-    .main_record .circle {
+    .main_record .circle,
+    .main_record .blue_circle {
         width: 50%;
     }
 
@@ -195,7 +332,8 @@
         height: 100%;
     }
 
-    .main_record .circle {
+    .main_record .circle,
+    .main_record .blue_circle {
         width: 100% !important;
         text-align: center;
         height: auto !important;
@@ -204,7 +342,8 @@
         max-width: 100% !important;
     }
 
-    .circle div {
+    .circle div,
+    .blue_circle div {
         transform: translate(-50%, -50%) !important;
     }
 
