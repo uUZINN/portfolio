@@ -5,7 +5,6 @@
 .main_text02 h3 {
     font-size: 12vw;
     letter-spacing: -0.3vw;
-
     line-height: 0.8;
 }
 
@@ -13,12 +12,22 @@
     display: block;
 }
 
+.main_text02 h3 span:nth-child(2) {
+    color: #C6EA9A;
+}
+
+.main_text02 h3 span:last-child {
+    color: #B8EAA7;
+}
+
+
 .main_text02 p.ko {
     font-size: 0.8vw;
     line-height: 1.4;
     text-transform: none;
     font-weight: 100;
     margin-top: 2vw;
+    color: #AAEAB3;
 }
 
 @media (max-width: 1650px) {}

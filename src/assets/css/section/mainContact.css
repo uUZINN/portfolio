@@ -1,6 +1,6 @@
 #mainSection.mainContact {
     position: relative;
-    z-index: 9;
+    z-index: 9999;
 }
 
 #mainSection.cont_container {
@@ -9,7 +9,7 @@
 }
 
 .main_contact {
-    background-color: var(--main-color);
+    background-color: var(--sub-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +30,7 @@
 }
 
 .contact_text h4 {
-    color: var(--mainBg-color);
+    color: var(--subBg-color);
     font-size: 4vw;
     letter-spacing: -0.15vw;
     text-align: center;
@@ -47,7 +47,7 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    border-bottom: 1px solid var(--mainBg-color);
+    border-bottom: 1px solid var(--subBg-color);
     padding-bottom: 0.5vw;
     padding-top: 2vw;
     font-size: 1vw;
@@ -57,7 +57,7 @@
     letter-spacing: -0.05vw;
     background: none;
     border: none;
-    color: var(--mainBg-color);
+    color: var(--subBg-color);
     font-size: 1vw;
     width: 95%;
     letter-spacing: -0.08vw;
@@ -65,20 +65,20 @@
 }
 
 .contact_input label span {
-    color: var(--mainBg-color);
+    color: var(--subBg-color);
     padding-top: 0.1vw;
     font-weight: 100;
 }
 
 .contact_input label input::placeholder {
-    color: var(--mainBg-color);
+    color: var(--subBg-color);
     opacity: 1;
     /* Firefox */
 }
 
 .contact_input label input::-ms-input-placeholder {
     /* Edge 12-18 */
-    color: var(--mainBg-color);
+    color: var(--subBg-color);
 }
 
 .contact_input label textarea {
@@ -92,7 +92,7 @@
 }
 
 .contact_input label textarea::placeholder {
-    color: var(--mainBg-color);
+    color: var(--subBg-color);
 }
 
 .contact_input button {
@@ -101,8 +101,8 @@
     font-size: 2vw;
     letter-spacing: -0.08vw;
     padding: 0.4vw 0 0.2vw;
-    background-color: var(--mainBg-color);
-    color: var(--main-color);
+    background-color: var(--subBg-color);
+    color: var(--sub-color);
     outline: none;
     cursor: pointer;
 }
@@ -112,23 +112,26 @@
     font-size: 16vw;
     letter-spacing: -0.55vw;
     text-align: center;
+    color: var(--sub-color);
 }
 
 .cont_ment {
     font-size: 4vw;
     letter-spacing: -0.1vw;
     text-align: center;
+    color: var(--sub-color);
 }
 
 .cont_ment.en {
     font-size: 6.5vw;
     letter-spacing: 0;
     margin-top: -1vw;
+    color: var(--sub-color);
 }
 
 .infor_box {
-    color: var(--mainBg-color);
-    background-color: var(--main-color);
+    color: var(--subBg-color);
+    background-color: var(--sub-color);
     padding: 1.3vw 1vw;
     width: 40%;
     border-radius: 0.3vw;
@@ -181,8 +184,8 @@
     padding: 0;
     font-size: 1.7vw;
     letter-spacing: -0.07vw;
-    border-bottom: 2px solid var(--mainBg-color);
-    color: var(--mainBg-color);
+    border-bottom: 2px solid var(--subBg-color);
+    color: var(--subBg-color);
 }
 
 .infor_right {

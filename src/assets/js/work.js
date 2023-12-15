@@ -12,8 +12,8 @@ export function work() {
         scrollTrigger: {
             trigger: ".parallax__item__bike",
             start: "top-=700",
-            end: "bottom",
-            scrub: true
+            end: "bottom+=700",
+            scrub: true,
         }
     })
 
@@ -32,26 +32,27 @@ export function work() {
         });
     });
 
-    const ani2 = gsap.timeline();
-    ani2.from(".main_mobile .i1", { y: -200, autoAlpha: 0, borderRadius: 200 })
-        .from(".main_mobile .i2", { y: 200, autoAlpha: 0, borderRadius: 200 })
-        .from(".main_mobile .i3", { y: -200, autoAlpha: 0, borderRadius: 200 })
+    // const ani2 = gsap.timeline();
+    // ani2.from(".main_mobile .i1", { autoAlpha: 0, borderRadius: 200 })
+    //     .from(".main_mobile .i2", { autoAlpha: 0, borderRadius: 200 })
+    //     .from(".main_mobile .i3", { autoAlpha: 0, borderRadius: 200 })
 
-    ScrollTrigger.create({
-        animation: ani2,
-        trigger: ".main_mobile",
-        start: "top-=250",
-        end: "+=2000",
-        scrub: true,
-        pin: true,
-    })
+    // ScrollTrigger.create({
+    //     animation: ani2,
+    //     trigger: ".main_mobile",
+    //     start: "top top", // 핀되는 위치 조정
+    //     end: "bottom bottom",
+    //     scrub: true,
+    //     pin: true,
+    //     anticipatePin: 1,
+    //     markers: true
+    // });
 
     // 전체 배경 변경
     let bg = gsap.timeline({
         scrollTrigger: {
             start: 0,
             end: "max",
-            markers: true,
             scrub: true
         }
     });

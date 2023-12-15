@@ -79,7 +79,7 @@ export function circle() {
             gsap.to('.blue_circle', { opacity: 1, duration: 30 });
             gsap.to('.circle', { opacity: 0, duration: 30 });
         } else {
-            gsap.to('.circle', { opacity: 1, duration: 20 });
+            gsap.to('.circle', { opacity: 0.8, duration: 10 });
             gsap.to('.blue_circle', { opacity: 0, duration: 20 });
         }
     });

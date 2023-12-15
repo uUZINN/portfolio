@@ -122,24 +122,28 @@
     margin-bottom: 14vw;
 }
 
-.main_record .work .work_title.w2 {
-    color: #C6EA9A;
-}
-
-.main_record .work .work_title.w3 {
-    color: #B8EAA7;
-}
-
-.main_record .work .work_title.w4 {
+.main_record .work .work_title.w1 {
     color: #AAEAB3;
 }
 
+.main_record .work .work_title.w2 {
+    color: #A7EAB6;
+}
+
+.main_record .work .work_title.w3 {
+    color: #A0EABC;
+}
+
+.main_record .work .work_title.w4 {
+    color: #99EAC2;
+}
+
 .main_record .work .work_title.w5 {
-    color: #9CEAC0;
+    color: #92EAC9;
 }
 
 .main_record .work .work_title.w6 {
-    color: #89EAD1;
+    color: #89EAD0;
 }
 
 
